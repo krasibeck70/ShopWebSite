@@ -6,171 +6,86 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
-    <link rel="stylesheet" href="/Content/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/animate.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- Favicon and touch icons -->
-    <link rel="shortcut icon" href="/assets/ico/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+    @RenderSection("Styles", required: false)
+    @section Styles{
+    
+    }
 
 </head>
 <body>
-    <!-- Top menu -->
-    <nav class="navbar navbar-fixed-top navbar-no-bg" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Bootstrap Navbar Menu Template</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="top-navbar-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">Plans</a></li>
-                    <li><a href="#">Faq</a></li>
-                    <li><a class="btn btn-link-3" href="#">Button</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Top content -->
-    <div class="top-content">
-        <img src="/assets/img/backgrounds/1.jpg" style="height: 524px; width: 4000px; margin-top: -170px; margin-left: -825px; position: absolute" />
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text wow fadeInLeft">
-                    <h1>Bootstrap Navbar Menu Template</h1>
-                    <div class="description">
-                        <p class="medium-paragraph">
-                            This is a free "Navbar Menu" made with the Bootstrap framework.
-                            Download it on <a href="http://azmind.com">AZMIND</a> and enjoy!
-                        </p>
-                    </div>
+    <div class="example3">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://disputebills.com">
+                        <img src="https://res.cloudinary.com/candidbusiness/image/upload/v1455406304/dispute-bills-chicago.png" alt="Dispute Bills">
+                    </a>
                 </div>
+                <div id="navbar3" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#">Начало</a></li>
+                        <li><a href="#">Анцузи</a></li>
+                        <li><a href="#">Контакти</a></li>
+                        <li><a href="#">За нас</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
             </div>
-        </div>
+            <!--/.container-fluid -->
+        </nav>
     </div>
 
-    <!-- Features -->
-    <div class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 features section-description wow fadeIn">
-                    <h2>Bootstrap Navbar Menu</h2>
-                    <div class="divider-1"><div class="line"></div></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 features-box wow fadeInLeft">
-                    <div class="row">
-                        <div class="col-sm-3 features-box-icon">
-                            <i class="fa fa-twitter"></i>
-                        </div>
-                        <div class="col-sm-9">
-                            <h3>Ut wisi enim ad minim</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                Ut wisi enim ad minim veniam, quis nostrud.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 features-box wow fadeInLeft">
-                    <div class="row">
-                        <div class="col-sm-3 features-box-icon">
-                            <i class="fa fa-instagram"></i>
-                        </div>
-                        <div class="col-sm-9">
-                            <h3>Sed do eiusmod tempor</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                Ut wisi enim ad minim veniam, quis nostrud.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 features-box wow fadeInLeft">
-                    <div class="row">
-                        <div class="col-sm-3 features-box-icon">
-                            <i class="fa fa-magic"></i>
-                        </div>
-                        <div class="col-sm-9">
-                            <h3>Quis nostrud exerci tat</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                Ut wisi enim ad minim veniam, quis nostrud.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 features-box wow fadeInLeft">
-                    <div class="row">
-                        <div class="col-sm-3 features-box-icon">
-                            <i class="fa fa-cloud"></i>
-                        </div>
-                        <div class="col-sm-9">
-                            <h3>Minim veniam quis nostrud</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
-                                Ut wisi enim ad minim veniam, quis nostrud.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
     @RenderBody();
 
-    <!-- Footer -->
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="~/Content/footer.css" rel="stylesheet" />
+    <!--footer start from here-->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 footer-copyright">
-                    &copy; Bootstrap Navbar Template by <a href="http://azmind.com">AZMIND</a>
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <div class="logofooter"> Logo</div>
+                    <p><i class="fa fa-map-pin"></i> Улица чучулига 39, Хасково, България</p>
+                    <p><i class="fa fa-phone"></i> +359 879 500 641</p>
+                    <p><i class="fa fa-envelope"></i> krasibeck70@gmail.com</p>
+
+                </div>
+                @*<div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">GENERAL LINKS</h6>
+                    <ul class="footer-ul">
+                        <li><a href="#"> Career</a></li>
+                        <li><a href="#"> Privacy Policy</a></li>
+                    </ul>
+                </div>*@
+                <div class="col-md-3 col-sm-6 footer-col">
+                    <h6 class="heading7">Social Media</h6>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fa fa-linkedin social-icon linked-in" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 footer-col right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9985.049214186614!2d25.54790327796168!3d41.92354872260749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14ad50b9c7d63607%3A0x2b5a425cf24ccf0e!2z0YPQuy4g4oCe0KfRg9GH0YPQu9C40LPQsOKAnCAzOSwgNjMwMiDQpdCw0YHQutC-0LLQvg!5e0!3m2!1sbg!2sbg!4v1499247045345" width="550" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </footer>
-
-
-    <!-- Javascript -->
-    <script src="/Scripts/jquery-3.1.1.min.js"></script>
-    <script src="/Scripts/bootstrap.min.js"></script>
-    <script src="/Scripts/jquery.backstretch.min.js"></script>
-    <script src="/Scripts/wow.min.js"></script>
-    <script src="/Scripts/retina-1.1.0.min.js"></script>
-    <script src="/Scripts/waypoints.min.js"></script>
-    <script src="/Scripts/scripts.js"></script>
-
-    <script src="/Scripts/placeholder.js"></script>
-
+    <!--footer start from here-->
+    <div class="copyright">
+        <div class="container">
+            <div class="col-md-6 col-md-offset-4">
+                <p>© @DateTime.Now.Year - All Rights with Krasimir Rusev Web Developer</p>
+            </div>
+        </div>
+    </div>
 
 
     @Scripts.Render("~/bundles/jquery")
